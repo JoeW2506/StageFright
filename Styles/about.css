@@ -1,0 +1,150 @@
+.slider-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #f4f4f4;
+}
+
+.left-panel h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.left-panel p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.indicator {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.indicator span {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator span.active {
+    background: #333;
+}
+
+.right-panel {
+    flex: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrows button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* Who and What we are cards */
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex: 1; 
+    color: white;
+}
+
+.text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.text-box h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.text-box p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.image-box {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-card-image {
+    background-image: url('../Assets/Images/logo.png');
+}
+
+.bottom-card-image {
+    background-image: url('../Assets/Images/logo.png');
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-panel {
+      text-align: center;
+    }
+
+    .indicator {
+      justify-content: center;
+    }
+  }

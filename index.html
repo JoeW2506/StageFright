@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!--
+if frames < 10 {
+  frames == more
+}
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Styles/spotlight.css">
+        <link rel="stylesheet" href="./Styles/main.css"> 
+        <link rel="stylesheet" href="./Styles/about.css">
+        <title>Document</title>
+        <script src="./Scripts/Modules/MathModified.js"></script>
+        <script src="./Scripts/SpotLight.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="./Assets/Images/Favicons/favicon.ico">
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <div class="nav"> 
+            <a href="#about">About</a>
+            <a href="./Pages/tours.html">Tours</a>
+            <a href="./Pages/albums.html">Albums</a>
+            <a href="./Pages/merch.html">Merch</a>
+            <a href="#Contact">Contact Us</a>
+        </div> 
+
+        <footer>
+            <p>&copy; StageFright</p>
+        </footer>
+
+        <!--HOME PAGE-->
+        <section class="homePage">
+            <img src="./Assets/Images/logo.png" alt="" class="centerLogo" />
+            <div class="overlay"></div> 
+        </section>
+
+        <!--WHO WE ARE AND WHAT WE ARE-->
+        <section class="About" id="about"> 
+            <div class="aboutContainer">
+              <!-- Top Card -->
+                <div class="card">
+                <div class="text-box top-card-text">
+                    <h1>Who We Are</h1>
+                    <p>Joey please explain who we are</p>
+                </div>
+                <div class="image-box top-card-image"></div>
+            </div>
+            <!-- Bottom Card -->
+            <div class="card">
+                <div class="image-box bottom-card-image"></div>
+                <div class="text-box bottom-card-text">
+                    <h1>Where We Are</h1>
+                    <p>Joey please explain where we are.</p>
+                </div>
+            </div>
+        </section>  
+
+        <!--SCROLL THROUGH ALL THE BAND MEMBERS-->
+        <section class="aboutBand"> 
+            <div class="slider-container">
+                <div class="left-panel">
+                  <h1 id="slide-title">Victor</h1>
+                  <p id="slide-text">This is the description for Slide 1.</p>
+                  <div class="indicator">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                  </div>
+                </div>
+                <div class="right-panel">
+                  <div class="carousel">
+                    <div class="carousel-item" style="background-image: url('./Assets/Images/logo.png');">Victor</div>
+                    <div class="carousel-item" style="background-image: url('./Assets/Images/logo.png');">Sam</div>
+                    <div class="carousel-item" style="background-image: url('./Assets/Images/logo.png');">Joseph</div>
+                    <div class="carousel-item" style="background-image: url('./Assets/Images/logo.png');">Dillon</div>
+                  </div>
+                  <div class="arrows">
+                    <button id="prev">&#8592;</button>
+                    <button id="next">&#8594;</button>
+                  </div>
+                </div>
+              </div>
+            
+              <script src="./Scripts/about.js"></script>
+        </section>
+        <cursor-hilight></cursor-hilight>
+        
+<!--
+        <div id="spotlights">
+            <spotlight></spotlight>
+            <spotlight></spotlight>
+            <spotlight></spotlight>
+            <spotlight></spotlight>
+            <spotlight></spotlight>
+        </div>
+-->
+    </body>
+</html>
