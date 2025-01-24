@@ -12,24 +12,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: #f4f4f4;
 }
 
 .left-panel h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2rem; 
+    color: white;
 }
 
 .left-panel p {
     font-size: 1rem;
-    margin: 10px 0;
+    margin: 10px 0; 
+    color: white;
 }
 
 .indicator {
     display: flex;
     gap: 5px;
     margin-top: 20px;
-}
+} 
 
 .indicator span {
     width: 10px;
@@ -115,8 +116,9 @@
 }
 
 .text-box p {
-    font-size: 1rem;
-    margin: 10px 0;
+    font-size: 1.5rem;
+    margin: 25px 0; 
+    line-height: 140%; 
 }
 
 .image-box {
@@ -126,11 +128,11 @@
 }
 
 .top-card-image {
-    background-image: url('../Assets/Images/logo.png');
+    background-image: url('../Assets/Images/who.jpg');
 }
 
 .bottom-card-image {
-    background-image: url('../Assets/Images/logo.png');
+    background-image: url('../Assets/Images/cleveland.jpg');
 }
 
 @media (max-width: 768px) {
