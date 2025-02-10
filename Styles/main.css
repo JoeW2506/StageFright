@@ -1,3 +1,6 @@
+@import url("./footer.css");
+@import url("./header.css");
+
 html {
     margin: 0; 
     padding: 0; 
@@ -12,35 +15,6 @@ body {
     padding: 0;
     background-color: rgb(27, 31, 35);
 } 
-
-.nav { 
-    position: fixed;
-    width: 100%;
-    height: 10%; 
-    background-color: rgba(0, 0, 0, 0); 
-    overflow: hidden;    
-    display: flex; 
-    align-items: center;
-    justify-content: center; 
-    background-color: rgba(0, 0, 0, .8);
-    z-index: 10;
-} 
-
-.nav a {
-    transition: 0.2s ease;
-    float: left;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    width: 18.7%; 
-    text-align: center;  
-}
-
-.nav a:hover {
-    transition: 0.2s ease;
-    font-size: 1.5rem;
-}
 
 
 .overlay {
@@ -79,37 +53,3 @@ body {
     gap: 50px;
     padding: 20px;
 }
-
-footer {
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%;
-    background-color: rgba(0, 0, 0, .8); 
-    color: white; 
-    text-align: center; 
-    padding: 10px 0; 
-    z-index: 100; 
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
-    border-top: 3px solid rgb(255, 255, 255); 
-    display: flex;  
-} 
-
-.mainFooter { 
-    width: 100%; 
-    height: 100%; 
-    justify-content: center; 
-    align-content: center;
-}
-
-.bpaLogo { 
-    position: absolute;
-    max-width: 10%;   
-    padding: 10px; 
-}
- 
-.fa { 
-    color: white;  
-    text-decoration: none;
-}
-

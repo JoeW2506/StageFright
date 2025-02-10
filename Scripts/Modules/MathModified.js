@@ -8,4 +8,9 @@ class Vector2
     {
         this.X = X; this.Y = Y
     }
+
+    get Pythag() 
+    {
+        return Math.sqrt(this.X * this.X + this.Y * this.Y)
+    }
 }
