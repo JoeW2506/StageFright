@@ -26,18 +26,6 @@ function UpdateMouseHilight(Position)
 
 function Main() 
 {
-    /*
-    let SpotLights = [...document.getElementsByTagName("spotlight")]
-    let SpotLightCount = 0
-    SpotLights.forEach(SpotLight => {
-        SpotLight.style.left = `${SpotLightCount * 20 + 7}vw`
-        SpotLightCount += 1
-    })
-
-    UpdateMouseHilight(new Vector2(0, 0))
-    UpdateSpotLights(SpotLights, new Vector2(10, 10))
-    */
-
     document.addEventListener('mousemove', (Event) => {
         // UpdateSpotLights(SpotLights, Event)
         UpdateMouseHilight(new Vector2(Event.x, Event.y))
@@ -45,16 +33,9 @@ function Main()
 
     UpdateMouseHilight(new Vector2(0, 0))
     
-    /*
     document.addEventListener('scroll', (Event) => {
-        SpotLights.forEach(SpotLight => {
-            SpotLight.style.bottom = `${-window.scrollY}px`
-            SpotLight.disabled = true
-        })
+        UpdateImageBoxes()
     })
-    */
-
-    //UpdateSpotLights(SpotLights, new Vector2(10, 10))
 }
 
 document.onreadystatechange = Main;

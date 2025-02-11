@@ -23,6 +23,16 @@
     text-align: center;  
 }
 
+.nav-1:hover
+{
+    transition: 0.2s ease;
+    font-size: 1.5rem;
+
+    background: linear-gradient(45deg, blue 33%, yellow 50%, red 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .nav-2:hover
 {
     transition: 0.2s ease;
@@ -50,6 +60,16 @@
     font-size: 1.5rem;
 
     background: linear-gradient(45deg, white 25%, blue 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-5:hover
+{
+    transition: 0.2s ease;
+    font-size: 1.5rem;
+
+    background: linear-gradient(45deg, red 33%, yellow 50%, blue 66%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
